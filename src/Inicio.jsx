@@ -2,9 +2,9 @@ import React from 'react';
 
 export default function Inicio() {
   return (
-    <div className="seccion">
-      <h1>Bienvenido a Inicio</h1>
-      <p>Esta es la página principal de mi aplicación en React.</p>
+    <div className="section">
+      <h1 style={{ fontSize: '3rem', margin: '40px 0' }}>Hotel Vecindad</h1>
+      <p>Bienvenidos a tu lugar de descanso ideal.</p>
     </div>
   );
 }

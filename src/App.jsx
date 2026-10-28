@@ -2,32 +2,35 @@ import React from 'react';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import Inicio from './Inicio';
-import Acerca from './Acerca';
-import ProyectoBlob from './proyectoBlob';
+import About from './About';
+import Contact from './Contact';
+import Reservas from './Reservas';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <header className="mi-header">
-          <h2>Mi Aplicación</h2>
-          <nav className="navegacion">
-            <Link to="/" className="btn-nav">Inicio</Link>
-            <Link to="/acerca" className="btn-nav">Acerca de</Link>
-            <Link to="/proyecto" className="btn-nav">Proyecto (Blob)</Link>
+      <div className="hotel-app">
+        <header className="header">
+          <h2>Hotel Paraíso</h2>
+          <nav>
+            <Link to="/">Inicio</Link>
+            <Link to="/about">Acerca de</Link>
+            <Link to="/reservas">Reservas</Link>
+            <Link to="/contact">Contacto</Link>
           </nav>
         </header>
 
-        <main className="mi-contenido">
+        <main className="main-content">
           <Routes>
             <Route path="/" element={<Inicio />} />
-            <Route path="/acerca" element={<Acerca />} />
-            <Route path="/proyecto" element={<ProyectoBlob />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/reservas" element={<Reservas />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
 
-        <footer className="mi-footer">
-          <p>Pie de página</p>
+        <footer className="footer">
+          <p>© 2026 Hotel Paraíso - Desarrollado por Ignacio</p>
         </footer>
       </div>
     </BrowserRouter>
