@@ -11,7 +11,7 @@ export default function App() {
     <BrowserRouter>
       <div className="hotel-app">
         <header className="header">
-          <h2>Hotel Paraíso</h2>
+          <h2>Hotel Vecindad</h2>
           <nav>
             <Link to="/">Inicio</Link>
             <Link to="/about">Acerca de</Link>
@@ -30,7 +30,7 @@ export default function App() {
         </main>
 
         <footer className="footer">
-          <p>© 2026 Hotel Paraíso - Desarrollado por Ignacio</p>
+          <p>2026 Hotel Vecindad</p>
         </footer>
       </div>
     </BrowserRouter>

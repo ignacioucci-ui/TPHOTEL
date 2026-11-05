@@ -1,3 +1,94 @@
+.alerta-exito {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  font-weight: bold;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: aparecer 0.4s ease-in-out;
+}
+
+.img-habitacion {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-contenido {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.input-fecha {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.modal-botones {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-confirmar {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  padding: 12px;
+  flex: 1;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-confirmar:hover {
+  background-color: #219150;
+}
+
+.btn-cancelar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px;
+  flex: 1;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-cancelar:hover {
+  background-color: #c0392b;
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -18,7 +109,7 @@ body {
 
 .header {
   background-color: #1a252f;
-  color: white;
+  color: rgb(14, 13, 13);
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -30,7 +121,7 @@ body {
 }
 
 .header nav a {
-  color: white;
+  color: rgb(11, 11, 11)5, 62, 62);
   text-decoration: none;
   margin-left: 20px;
   font-weight: bold;
